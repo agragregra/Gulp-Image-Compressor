@@ -1,10 +1,12 @@
 var gulp                   = require('gulp'),
 		imagemin               = require('gulp-imagemin'),
 		imageminJpegRecompress = require('imagemin-jpeg-recompress'),
-		imageminPngquant       = require('imagemin-pngquant');
+		imageminPngquant       = require('imagemin-pngquant'),
+		newer                  = require('gulp-newer');
  
 exports.default = () => (
-	gulp.src('./_src/**/*')
+	gulp.src('_src/**/*')
+	.pipe(newer('dest'))
 	.pipe(imagemin([
 		imageminJpegRecompress({
 			progressive: true,
