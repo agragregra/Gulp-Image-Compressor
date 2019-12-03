@@ -4,7 +4,7 @@
 
 <ol>
 	<li>npm i</li>
-	<li>2. run <b>gulp</b></li>
+	<li>run <b>gulp</b></li>
 </ol>
 
 <p>Processign: "_src" => "dest" folder.</p>
