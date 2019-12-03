@@ -2,7 +2,8 @@ var gulp                   = require('gulp'),
 		imagemin               = require('gulp-imagemin'),
 		imageminJpegRecompress = require('imagemin-jpeg-recompress'),
 		imageminPngquant       = require('imagemin-pngquant'),
-		newer                  = require('gulp-newer');
+		newer                  = require('gulp-newer'),
+		debug                  = require('gulp-debug');
  
 exports.default = () => (
 	gulp.src('_src/**/*')
@@ -13,5 +14,7 @@ exports.default = () => (
 			min: 70, max: 75
 		}),
 		imageminPngquant({quality: [0.7, 0.75]})
-	])).pipe(gulp.dest('dest'))
+	]))
+	.pipe(debug())
+	.pipe(gulp.dest('dest'))
 );
