@@ -15,6 +15,9 @@ exports.default = () => (
 		}),
 		imageminPngquant({quality: [0.7, 0.75]})
 	]))
-	.pipe(debug({ title: 'Processing:' }))
+	.pipe(debug({
+		title: 'Processing:',
+		showCount: false
+	}))
 	.pipe(gulp.dest('dest'))
 );
