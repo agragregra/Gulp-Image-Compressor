@@ -11,7 +11,7 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-debug": "^4.0.0",
-    "gulp-imagemin": "^6.2.0",
+    "gulp-imagemin": "^7.1.0",
     "gulp-newer": "^1.4.0",
     "imagemin-jpeg-recompress": "^6.0.0",
     "imagemin-pngquant": "^8.0.0"
