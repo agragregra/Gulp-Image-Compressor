@@ -13,6 +13,7 @@
     "gulp-debug": "^4.0.0",
     "gulp-imagemin": "^7.1.0",
     "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
     "imagemin-jpeg-recompress": "^6.0.0",
     "imagemin-pngquant": "^8.0.0"
   }
